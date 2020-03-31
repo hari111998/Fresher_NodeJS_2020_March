@@ -6,7 +6,7 @@ fs.writeFile('myfile.txt', 'fhdfhdfh', err => {
   console.log('actual write end', Date.now())
 
   console.log('read start', Date.now())
-  fs.readFile('myfile1.txt', (err, data) => {
+  fs.readFile('myfile.txt', (err, data) => {
     if (err) throw err
     console.log('read end', Date.now())
     console.log(data.toString())
